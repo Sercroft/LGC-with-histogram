@@ -1,5 +1,4 @@
 import matplotlib.pyplot as plt
-import math
 
 #Save secuency to .txt
 def saveToTxt(data):
@@ -15,7 +14,7 @@ def truncate(number: float, max_decimals: int) -> float:
 def drawHistogram(values):
     plt.hist(values, bins=10, color='orange', ec='black')
     plt.title('Histograma LGC by Andrus')
-    plt.xticks([0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9])
+    plt.xticks([0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1])
     plt.show()
 
 #Generate pseudo random secuency
